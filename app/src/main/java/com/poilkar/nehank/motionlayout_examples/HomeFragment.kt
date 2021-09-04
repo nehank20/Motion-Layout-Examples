@@ -33,9 +33,21 @@ class HomeFragment : Fragment(R.layout.home_fragment) {
     }
 
     private fun setOnClickListeners(){
-        binding.cvBasic.setOnClickListener {
+        binding.cvScroll.setOnClickListener {
             val action = HomeFragmentDirections.actionHomeFragmentToBasicFragmentOne()
             findNavController().navigate(action)
         }
+
+        binding.cvYouTube.setOnClickListener {
+            val action = HomeFragmentDirections.actionHomeFragmentToYoutTubeOne()
+            findNavController().navigate(action)
+        }
+
+        binding.cvSplash.setOnClickListener {
+            val action = HomeFragmentDirections.actionHomeFragmentToTwitterSplashOne()
+            findNavController().navigate(action)
+        }
+
+
     }
 }

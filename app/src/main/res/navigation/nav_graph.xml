@@ -17,10 +17,34 @@
             app:exitAnim="@anim/slide_out_left"
             app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_homeFragment_to_youtTubeOne"
+            app:destination="@id/youtTubeOne"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_homeFragment_to_twitterSplashOne"
+            app:destination="@id/twitterSplashOne"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
     </fragment>
     <fragment
         android:id="@+id/basicFragmentOne"
         android:name="com.poilkar.nehank.motionlayout_examples.basic.BasicFragmentOne"
         android:label="BasicFragmentOne"
         tools:layout="@layout/basic_one_fragment" />
+    <fragment
+        android:id="@+id/youtTubeOne"
+        android:name="com.poilkar.nehank.motionlayout_examples.youtube.YouTubeOne"
+        android:label="YoutTubeOne"
+        tools:layout="@layout/you_tube_fragment" />
+    <fragment
+        android:id="@+id/twitterSplashOne"
+        tools:layout="@layout/twitter_splash_fragment"
+        android:name="com.poilkar.nehank.motionlayout_examples.splash.TwitterSplashOne"
+        android:label="TwitterSplashOne" />
 </navigation>
